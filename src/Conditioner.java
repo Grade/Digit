@@ -11,7 +11,8 @@ public class Conditioner extends Device {
         this.maxTemperature = maxTemperature;
     }
 
-    void workConditioner() {
+    @Override
+    void work() {
         System.out.println("Change temperature " + minTemperature + "->" + maxTemperature);
     }
 }

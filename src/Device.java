@@ -1,8 +1,8 @@
 
-public class Device {
+public abstract class Device {
 
     private int volts;
-    private String deviceName;
+    protected String deviceName;
 
     public Device(int volts, String deviceName) {
         if(volts < 0) {
@@ -15,4 +15,7 @@ public class Device {
     void start() {
         System.out.println(deviceName + " started with " + volts + "V");
     }
+
+    abstract void work();
+
 }
